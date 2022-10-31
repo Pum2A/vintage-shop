@@ -9,7 +9,7 @@
 
 }
 html, body {
-    overflow-x: hidden;
+    overflow-x: initial;
   }
   body {
     position: relative;
@@ -19,4 +19,37 @@ html, body {
 
 html{
     font-family: 'Alumni Sans Pinstripe', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 1.3rem;
+  background-color: rgb(210, 193, 193);
+  
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(345, 20, 39 / 1);
+  border-radius: 50vw;
+  margin-block: .5rem;
+  margin-inline: .2rem;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(345, 100, 39 / 1);
+  border-radius: 50vw;
+  margin-block: .5rem;
+  margin-inline: .4rem;
+
+}
+@media only screen and (max-width: 800px){
+
+  html, body{
+    overflow-x: hidden;
+  }
+  
+
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  
 }
