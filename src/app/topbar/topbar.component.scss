@@ -1,0 +1,86 @@
+.top{
+    background: rgb(208, 206, 206);
+    height: 8vh;
+    width: 100%;
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    // margin: 10px 10px;
+    font-size: 2.5rem;
+    width: 70px;
+    background-color: #E34A6F;
+    transition: 0.3s;
+    cursor: pointer;
+       
+}
+.logo:hover{
+    background-color: black;
+    transition: 0.3s;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    
+}
+
+nav a{
+    display: flex;
+    padding: 10px;
+    width: 160px;
+    color: #fff;
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    max-width:250px;
+    background-color: black;
+    transition: 0.3s;
+
+}
+
+nav a:hover{
+    background-color: #E34A6F;
+    transition: 0.3s;
+}
+.shopping-card-container{
+    display: flex;
+    justify-content: center;
+    }
+.shopping-card-container span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 60px;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.shopping-card-container span:hover{
+    background-color: #E34A6F;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 800px){
+
+    nav a{
+        max-width: 60px;
+        font-size: 1rem;
+    }
+
+    .logo{
+        width: 50px;
+        font-size: 1.5rem;
+    }
+    
+}
