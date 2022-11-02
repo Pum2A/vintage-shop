@@ -13,6 +13,7 @@
     color: rgb(255, 255, 255);
     // margin: 10px 10px;
     font-size: 2.5rem;
+    font-weight: 600;
     width: 70px;
     background-color: #E34A6F;
     transition: 0.3s;
@@ -43,6 +44,8 @@ nav a{
     max-width:250px;
     background-color: black;
     transition: 0.3s;
+    font-weight: 600;
+
 
 }
 
@@ -75,13 +78,22 @@ nav a:hover{
 @media only screen and (max-width: 800px){
 
     nav a{
-        max-width: 60px;
-        font-size: 1rem;
+        // display: none;
+        max-width: 50px;
+        margin: 10px;
+        font-size: .9rem;
+        font-weight: 600;
     }
 
     .logo{
-        width: 50px;
-        font-size: 1.5rem;
+        width: 40px;
+        font-size: 2rem;
+        font-weight: 600;
     }
+    .shopping-card-container{
+        width: 40px;
+    }
+
+    
     
 }

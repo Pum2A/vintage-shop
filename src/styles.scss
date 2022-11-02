@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap');
 
+
+$gray: rgb(208, 206, 206);
+
 *{
     margin: 0;
     padding: 0;
@@ -30,7 +33,7 @@ html{
 ::-webkit-scrollbar-track {
   background: hsl(345, 20, 39 / 1);
   border-radius: 50vw;
-  margin-block: .5rem;
+  margin-block: .2rem;
   margin-inline: .2rem;
 }
 ::-webkit-scrollbar-thumb {

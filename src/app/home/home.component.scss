@@ -1,10 +1,13 @@
+$gray: rgb(208, 206, 206);
+
+
 .home-background {
   background: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.769)),
     url(../../assets/background-main.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300vh;
+  height: 320vh;
 }
 
 .h1-container {
@@ -49,7 +52,7 @@ h2 {
 
 .section-border {
   margin-top: 350px;
-  background: rgb(208, 206, 206);
+  background: $gray;
   height: 8vh;
   width: 100%;
   display: flex;
@@ -127,6 +130,7 @@ p{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  
 }
 
 .boxes-backgrounds{
@@ -134,6 +138,12 @@ p{
   width: 250px;
   margin: 100px 180px;
   border-radius: 0.2rem;
+
+}
+
+.boxes-model{
+  border-left: 5px solid $gray;
+  // padding: 0px;
 
 }
 
@@ -155,7 +165,7 @@ p{
 .boxes-text-price-background{
   display: flex;
   justify-content: center;
-  background-color: rgb(208, 206, 206);
+  background-color: $gray;
   height: 60px;
   width: 100%;
   border-left: 3px solid  #fc003f;
@@ -180,13 +190,49 @@ p{
   color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
+  transition: 0.3s;
 
+
+  &:hover{
+    background-color: $gray;
+    transition: 0.3s;
+  }
 }
 @media only screen and (max-width: 800px){
+
+  .home-background{
+    height: 800vh;
+    width: 100%;
+  }
   .img-container-wrap{
     max-width: 400px;
   }
+  .h1-container h1{
+    font-size: 3rem;
+  }
+  .h2-container{
+    margin-right: 0px;
+  }
+  .h2-container h2{
+    font-size: 1.4rem;
 
+  }
+  .h3-container{
+    margin-right: 0px;
+
+  }
+  .h3-container h3{
+    font-size: 1.4rem;
+  }
+
+  .section-border a{
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .buyButton{
+    width: 20rem;
+  }
 
 }
 
