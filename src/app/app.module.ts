@@ -5,12 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { HomeComponent } from './home/home.component';
+import { WomenComponent } from './women/women.component';
+import { ManComponent } from './man/man.component';
+import { LoginComponent } from './login/login.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopbarComponent,
-    HomeComponent
+    HomeComponent,
+    WomenComponent,
+    ManComponent,
+    LoginComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
