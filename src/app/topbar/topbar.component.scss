@@ -1,9 +1,9 @@
 .top{
-    background: rgb(208, 206, 206);
+    background: #f3f6fc;
     height: 8vh;
     width: 100%;
     display: flex;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.142);
+    border-bottom: 1px solid #000;
 }
 
 .logo{
@@ -11,11 +11,10 @@
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
-    // margin: 10px 10px;
     font-size: 2.5rem;
     font-weight: 600;
     width: 70px;
-    background-color: #E34A6F;
+    background-color:hsl(345, 100, 39 / 1);
     transition: 0.3s;
     cursor: pointer;
        
@@ -37,6 +36,7 @@ nav a{
     display: flex;
     padding: 10px;
     width: 160px;
+    height: 55px;
     color: #fff;
     font-size: 1.3rem;
     align-items: center;
@@ -80,8 +80,8 @@ nav a:hover{
     nav a{
         // display: none;
         max-width: 50px;
-        margin: 10px;
         font-size: .9rem;
+        margin: 10px;
         font-weight: 600;
     }
 

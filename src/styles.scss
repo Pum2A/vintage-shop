@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap');
 
 
-$gray: rgb(208, 206, 206);
+$gray: rgba(180, 178, 178, 0.584);
 $pink: #e34a6f;
 *{
     margin: 0;
@@ -17,6 +17,8 @@ html, body {
   body {
     position: relative;
     height: 200vh;
+    background-color: rgba(230, 230, 230, 0.83);
+
 
   }
 
