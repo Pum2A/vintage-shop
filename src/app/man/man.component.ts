@@ -12,4 +12,9 @@ export class ManComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  beshMen = "../../assets/mezczyzna-BIALY.webp";
+  blackMen = "../../assets/mezczyzna-czarny.webp";
+  pinkMen = "../../assets/mezczyzna-rozowy.webp";
+  whiteMen = "../../assets/mezczyzna-BIALY.webp";
+  rainbowMen = "../../assets/mezczyzna-bialy-kolorowy.webp";
 }
