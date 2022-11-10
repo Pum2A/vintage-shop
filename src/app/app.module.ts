@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgOptimizedImage } from '@angular/common';
-import { LazyLoadImageModule} from 'ng-lazyload-image';
-
+import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { LazyLoadImageDirective } from 'ng-lazyload-image';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopbarComponent } from './topbar/topbar.component';
@@ -29,6 +29,7 @@ import { ShopCardComponent } from './shop-card/shop-card.component';
     AppRoutingModule,
     NgOptimizedImage,
     LazyLoadImageModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

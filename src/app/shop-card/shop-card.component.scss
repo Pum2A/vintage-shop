@@ -14,10 +14,9 @@
 }
 
 .background{
-    margin-top: 75px;
-    background-color: #f3f6fc;
-    height: 800px;
-    width: 1500px;
+    background-color: #dadde4;
+    height: 200vh;
+    width: 100%;
     box-shadow: 0px 0px 7px rgb(196, 196, 196);
 }
 
@@ -44,9 +43,9 @@
 
 .items-container{
     
-    border-radius: 50px;
     height: 200px;
-    width: 380px;
+    width: 390px;
+    background-color: #cacdda;
     margin: 10px 20px 0px 20px;
     
 }
@@ -65,14 +64,21 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    width: 500px;
+    
     height: 100px;
-    margin-left: 25px;
+    width: 680px;
+    background-color: #cacdda;
+    margin: 10px 20px 0px 20px;
+
 }
 
 .logo-icon{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    width: 60px;
+    height: 62px;
+    border-radius: 70%;
+    margin: 20px;
     box-shadow: 0px 0px 6px #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

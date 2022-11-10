@@ -11,5 +11,9 @@ export class ShopCardComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  paypalIcon = '../../assets/paypal-logo';
+  mastercardIcon = '../../assets/logo-mastercard.png';
+  visaIcon = '../../assets/visa-logo.svg';
+  bankIcon = '../../assets/logo-bank.webp';
 
 }
