@@ -1,48 +1,72 @@
+$pink: #e34a6f;
+$gray: #DCDCDC;
+$white: #FFFFFF;
+$dark-blue: #1E1E2D;
+
+
 .top{
-    background: #f3f6fc;
-    height: 8vh;
-    width: 100%;
-    display: flex;
+    background: $white;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
     border-bottom: 1px solid #000;
+}
+
+
+#menu{
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 250px;
+    margin-top: 30px;
+    
 }
 
 .logo{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(255, 255, 255);
-    font-size: 2.5rem;
+    color: $dark-blue;
+    font-size: 2.2rem;
     font-weight: 600;
-    width: 70px;
-    background-color:hsl(345, 100, 39 / 1);
     transition: 0.3s;
+    text-transform: uppercase;
+    margin-left: 20px;
     cursor: pointer;
+
+
        
 }
-.logo:hover{
-    background-color: black;
-    transition: 0.3s;
-}
+
 
 nav{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex: 1;
+    flex-direction: column;
+    margin-top: 50px;
+    // align-items: center;
+    // flex: 1;
     
 }
 
 nav a{
     display: flex;
-    padding: 10px;
-    width: 160px;
+   
     height: 55px;
-    color: #fff;
+    color: $dark-blue;
     font-size: 1.3rem;
     align-items: center;
     justify-content: center;
-    max-width:250px;
-    background-color: black;
+    margin-top: 30px;
+    // max-width:250px;
     transition: 0.3s;
     font-weight: 600;
 
@@ -50,28 +74,30 @@ nav a{
 }
 
 nav a:hover{
-    background-color: #E34A6F;
+    background-color: #6f6f7125;
     transition: 0.3s;
 }
 .shopping-card-container{
     display: flex;
     justify-content: center;
+    margin-top: 50px;
     }
 .shopping-card-container span{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    width: 60px;
-    font-size: 1.8rem;
-    color: #fff;
+    font-weight: 600;
+    height: 55px;
+    font-size: 1.6rem;
+    width: 100%;
+    color: $dark-blue;
     cursor: pointer;
     transition: 0.3s;
 
 }
 
 .shopping-card-container span:hover{
-    background-color: #E34A6F;
+    background-color: #6f6f7125;
     transition: 0.3s;
 }
 
@@ -80,14 +106,14 @@ nav a:hover{
     nav a{
         // display: none;
         max-width: 50px;
-        font-size: .9rem;
+        font-size: .6rem;
         margin: 10px;
         font-weight: 600;
     }
 
     .logo{
         width: 40px;
-        font-size: 2rem;
+        font-size: 1.3rem;
         font-weight: 600;
     }
     .shopping-card-container{

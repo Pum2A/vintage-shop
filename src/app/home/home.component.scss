@@ -1,59 +1,69 @@
-$gray: #f3f6fc;
+$pink: #e34a6f;
+$gray: #F9F9F9;
+$white: #FFFFFF;
+$dark-blue: #1E1E2D;
+$text-color: #54546c;
 
 
 
 .home-background {
-  background: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.769)),
-    url(../../assets/background-main.webp);
+  background-color: $gray;
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 320vh;
+  height: 750vh;
+  margin-left: 200px;
 }
 
 .h1-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .h1-container h1 {
-  display: flex;
   margin-top: 300px;
   font-size: 7rem;
-  color: #fff;
+  color: $text-color;
 }
 
-.VINT {
-  color: #e34a6f;
-  margin-right: 14px;
+.h1-container h1 span{
+  color: $dark-blue;
 }
+
 
 .h2-container {
   display: flex;
   justify-content: center;
-  margin-right: 175px;
   align-items: center;
 }
 h2 {
   font-size: 3.7rem;
-  color: #fff;
+  color: #54546c;
+}
+
+.h2-container h2 span{
+  color: $dark-blue;
+}
+.h3-container h3 span{
+  color: $dark-blue;
 }
 
 .h3-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 390px;
 
 }
 .h3-container h3{
-    color: #fff;
+    color: $text-color;
 
 }
 
 .section-border {
   margin-top: 350px;
-  background: $gray;
+  background: $white;
   height: 8vh;
   width: 100%;
   display: flex;
@@ -66,185 +76,174 @@ h2 {
     display: flex;
     font-size: 2.5rem;
     color: #000;
-    transition: .5s;
+    transition: .4s;
+    
 
 }
 
 .section-border a:hover{
-    color: #fc003f;
-    transition: .5s;
+    color: #fff;
+    background-color: #6f6f71c6;
+    padding: 30px 50px 30px 50px;
+    transition: .4s;    
+
+}
+
+
+
+
+
+.clothes-container{
+display: grid;
+grid-template-columns: 33% 33% 33% ;
+grid-template-rows: 25% 25% 25%;
+margin: 20px;
+}
+.flex{
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 img{
-    height: 400px;
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
+width: 300px;
+height: 450px;
+margin: 40px 50px;
+box-shadow: 0px 0px 12px #fff;
 }
-
-.section-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-}
-
- .img-container-wrap{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  max-width: 924px;
-
-}
-.img-container-wrap img{
-  margin: 2px;
-}
-.text-container{
-  display: block;
-}
-p{
-  color: #fff;
-}
-
-
 .image-container{
-  // display: flex;
-  flex-wrap: wrap;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
+p{
+font-size: 1.2rem;
+color: $dark-blue;
+font-weight: 700;
+box-sizing: 0px 0px 4px #fff;
+}
+button{
+width: 4rem;
+height: 4rem;
+outline: none;
+border: none;
+margin-top: 5px;
+background-color: $dark-blue;
+box-shadow: 0px 0px 12px #f3f6fc;
+color: #fff;
+font-size: 1rem;
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
+text-transform: uppercase;
+border-radius: 50%;
+transition: 0.4s;
+cursor: pointer;
+
+&:hover{
+  transition: 0.4s;
+  background-color: #2c2c41;
+  color: #fff;
+ 
+}
+}
+.price-text{
+font-size: 2rem;
+margin-top: 5px;
+color: $dark-blue;
+font-weight: bold;
+box-sizing: 2px 2px 4px red;
 
 }
-.text{
+
+
+
+
+footer{
+  height: 10vh;
+  width: 100%;
+  background-color: #f3f6fc;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 200px;  
+}
+.text-container p{
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1050px){
+
+img{
+  width: 150px;
+  height: 250px;
+  margin: 50px 25px;
+
+}
+}
+@media only screen and (min-width: 600px) {
+  .home-background{
+    height: 400vh;
+  }
+}
+@media only screen and (max-width: 600px){
+.clothes-container{
+  display: flex;
+  flex-direction: column;
+}
+.flex{
   flex-direction: column;
 }
 
 
-.boxes-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+}
+// .home-background{
+//   height: 1020vh;
+//   width: 100%;
+// }
+
+.section-border a{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+footer .text-container p{
+  font-size: .7rem;
+}
+
+
+
+
+@media only screen and (max-width: 800px) and (min-width: 601px){
   
-}
-
-.boxes-backgrounds{
-  height: 400px;
-  width: 250px;
-  margin: 100px 180px;
-  border-radius: 0.2rem;
-
-}
-
-.boxes-model{
-  border-left: 5px solid $gray;
-  box-shadow: 1px 1px 15px #fff;
-
-}
-
-.boxes-text{
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding:  15px;
-}
-.button-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 10px;
-}
-.boxes-text-price-background{
-  display: flex;
-  justify-content: center;
-  background-color: $gray;
-  height: 60px;
-  width: 100%;
-  border-left: 3px solid  #fc003f;
-}
-.boxes-text-price{
-  font-size: 2rem;
-  color: #fc003f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: 10px;
-  font-weight: 700;
-}
-
-.buyButton{
-  width: 10vw;
-  height: 5vh;
-  background-color: #e34a6f;
-  border: none;
-  outline: none;
-  font-family: 'Alumni Sans Pinstripe', sans-serif;
-  color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: 0.3s;
-
-
-  &:hover{
-    background-color: $gray;
-    transition: 0.3s;
-  }
-}
-
-@media only screen and (max-width: 1400px){
-
-  .buyButton{
-    width: 20rem;
-  }
-
-}
-
-
-
-@media only screen and (max-width: 800px){
-
   .home-background{
-    height: 800vh;
+    height: 200vh;
     width: 100%;
   }
   .img-container-wrap{
     max-width: 400px;
   }
-  .h1-container h1{
-    font-size: 3rem;
-  }
-  .h2-container{
-    margin-right: 0px;
-  }
-  .h2-container h2{
-    font-size: 1.4rem;
-
-  }
-  .h3-container{
-    margin-right: 0px;
-
-  }
-  .h3-container h3{
-    font-size: 1.4rem;
-  }
-
   .section-border a{
     font-size: 1.3rem;
     font-weight: 600;
   }
-
-  .buyButton{
-    width: 20rem;
-  }
-
+  
+  
+  
 }
 

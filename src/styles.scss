@@ -23,7 +23,9 @@ html, body {
   }
 
 html{
-    font-family: 'Alumni Sans Pinstripe', sans-serif;
+  font-family: 'Roboto', sans-serif;
+
+
 }
 
 ::-webkit-scrollbar {
@@ -33,13 +35,13 @@ html{
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(345, 20, 39 / 1);
+  background: hsl(266, 19, 77 / 1);
   border-radius: 50vw;
   margin-block: .2rem;
   margin-inline: .2rem;
 }
 ::-webkit-scrollbar-thumb {
-  background: hsl(345, 100, 39 / 1);
+  background: hsl(266, 19, 37 / 1);
   border-radius: 50vw;
   margin-block: .5rem;
   margin-inline: .4rem;
