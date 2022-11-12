@@ -1,16 +1,68 @@
-<div class="top">
-    <div class="menu-container">
-        <span class="material-symbols-outlined" id="menu"> menu </span>
-        <div routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page" class="logo">Vint</div>
+<div class="top" *ngIf="sidenav" [@fade]="sidenav">
+  <div class="menu-container">
+    <span class="material-symbols-outlined" id="menu" (click)="onClick()">
+      menu
+    </span>
+    <div
+      routerLink="/home"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+      class="logo"
+    >
+      Vint
     </div>
-    <nav>
-        <a routerLink="/women" routerLinkActive="active" ariaCurrentWhenActive="page">WOMEN</a>
-        <a  routerLink="/man" routerLinkActive="active" ariaCurrentWhenActive="page">MAN</a>
-        <a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">LOGIN</a>
-        <a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">CONTACT</a>
-    </nav>
-    <div class="shopping-card-container" routerLink="/shop-card" routerLinkActive="active" ariaCurrentWhenActive="page">
-        <!-- <span class="material-symbols-outlined">SHOPPING CARD</span> -->
-        <span>SHOPPNIG CARD(0)</span>
+  </div>
+  <nav *ngIf="hide" [@hide]="hide">
+    <a
+      routerLink="/women"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+      >WOMEN</a
+    >
+    <a routerLink="/man" routerLinkActive="active" ariaCurrentWhenActive="page"
+      >MAN</a
+    >
+    <a
+      routerLink="/login"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+      >LOGIN</a
+    >
+    <a
+      routerLink="/contact"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+      >CONTACT</a
+    >
+    <a
+      routerLink="/shop-card"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+      >SHOPPNIG CARD(0)</a
+    >
+  </nav>
+  <nav *ngIf="show" [@show]="show">
+    <div class="span-container">
+
+        <span class="material-symbols-outlined" routerLink="/man"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"> woman </span>
+    
+        <span class="material-symbols-outlined" routerLink="/women"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"> man </span>
+    
+        <span class="material-symbols-outlined" routerLink="/login"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"> login </span>
+    
+        <span class="material-symbols-outlined" routerLink="/contact"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"> call </span>
+    
+        <span class="material-symbols-outlined" routerLink="/shop-card"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"> shopping_cart </span>
     </div>
+  </nav>
 </div>

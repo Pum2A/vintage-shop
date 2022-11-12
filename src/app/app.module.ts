@@ -12,6 +12,9 @@ import { ManComponent } from './man/man.component';
 import { LoginComponent } from './login/login.component';
 import { ContactComponent } from './contact/contact.component';
 import { ShopCardComponent } from './shop-card/shop-card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -22,13 +25,17 @@ import { ShopCardComponent } from './shop-card/shop-card.component';
     ManComponent,
     LoginComponent,
     ContactComponent,
-    ShopCardComponent
+    ShopCardComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgOptimizedImage,
     LazyLoadImageModule,
+    FormsModule,
+    BrowserAnimationsModule,
+
     
   ],
   providers: [],

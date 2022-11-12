@@ -10,6 +10,7 @@ $dark-blue: #1E1E2D;
     width: 250px;
     position: fixed;
     border-bottom: 1px solid #000;
+    transition: 0.3s;
 }
 
 
@@ -52,7 +53,7 @@ nav{
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    // align-items: center;
+    // max-width: 250px;
     // flex: 1;
     
 }
@@ -66,7 +67,7 @@ nav a{
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    // max-width:250px;
+    max-width:250px;
     transition: 0.3s;
     font-weight: 600;
 
@@ -76,6 +77,41 @@ nav a{
 nav a:hover{
     background-color: #6f6f7125;
     transition: 0.3s;
+}
+
+nav span {
+    transition: 0.3s;
+
+    transform: translate3d(-250%, 0, 0);
+    color: $dark-blue;
+    font-size: 2rem;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    
+ 
+    
+    &:hover{
+        background-color: #6f6f7125;
+    transition: 0.3s;
+
+    
+    }
+}
+.span-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.span-container span{
+    padding: 10px;
+    border-radius: 100px;
+    width: 50px;
+    
 }
 .shopping-card-container{
     display: flex;
