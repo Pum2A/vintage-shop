@@ -1,16 +1,16 @@
 <div class="top" *ngIf="sidenav" [@fade]="sidenav">
-  <div class="menu-container">
-    <span class="material-symbols-outlined" id="menu" (click)="onClick()">
-      menu
-    </span>
+  <div class="menu-container" *ngIf="menu" [@menu]="menu">
     <div
-      routerLink="/home"
-      routerLinkActive="active"
-      ariaCurrentWhenActive="page"
-      class="logo"
+    routerLink="/home"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    class="logo"
     >
-      Vint
-    </div>
+    Vint
+  </div>
+  <span class="material-symbols-outlined" id="menu" (click)="onClick()">
+    menu
+  </span>
   </div>
   <nav *ngIf="hide" [@hide]="hide">
     <a

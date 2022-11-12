@@ -7,7 +7,7 @@ $dark-blue: #1E1E2D;
 .top{
     background: $white;
     height: 100vh;
-    width: 250px;
+    width: 200px;
     position: fixed;
     border-bottom: 1px solid #000;
     transition: 0.3s;
@@ -15,20 +15,27 @@ $dark-blue: #1E1E2D;
 
 
 #menu{
-    font-size: 2.3rem;
+    font-size: 3rem;
     display: flex;
     justify-content: center;
     cursor: pointer;
+    margin-top: 15px;
+    background-color: #1e1e2dd9;
+    color: $gray;
+    padding: 5px;
+    border-radius: 100px;
 
 }
 
 .menu-container{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 10vh;
-    width: 250px;
+    width: 200px;
     margin-top: 30px;
+    // margin-left:50px;
     
 }
 
@@ -41,7 +48,8 @@ $dark-blue: #1E1E2D;
     font-weight: 600;
     transition: 0.3s;
     text-transform: uppercase;
-    margin-left: 20px;
+    margin-top: 45px;
+    // margin-left: 0px;
     cursor: pointer;
 
 
@@ -76,6 +84,7 @@ nav a{
 
 nav a:hover{
     background-color: #6f6f7125;
+    
     transition: 0.3s;
 }
 
@@ -96,6 +105,7 @@ nav span {
     &:hover{
         background-color: #6f6f7125;
     transition: 0.3s;
+    // padding: 20px 10px;
 
     
     }
@@ -105,10 +115,11 @@ nav span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 63px;
 }
 
 .span-container span{
-    padding: 10px;
+    padding: 15px;
     border-radius: 100px;
     width: 50px;
     

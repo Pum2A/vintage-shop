@@ -1,0 +1,147 @@
+$pink: #e34a6f;
+$gray: #F9F9F9;
+$white: #FFFFFF;
+$dark-blue: #1E1E2D;
+$text-color: #54546c;
+
+
+.background{
+    margin-left: 200px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-login{
+    height: 600px;
+    width: 750px;
+    background-color: $gray;
+    margin-top: 200px;
+}
+.h2-container h2{
+    display: flex;
+    justify-content: left;
+    margin: 30px 35px 15px 35px;
+    align-items: center;
+    // height: 100px;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    
+}
+
+.h2-container p{
+    display: flex;
+    justify-content: left;
+    margin: 0px 35px 0px 35px;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+form{
+    // display: flex;
+    // justify-content: left;
+    align-items: center;
+    margin: 25px 15px 10px 35px;
+}
+.form-container{
+    width: 100%;
+
+}
+
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.login-container label, .text{
+    margin-top: 15px;
+}
+.password-container label, .text{
+    
+    margin-top: 15px;
+}
+
+.login-container .password-container label, .text{
+    height: 5vh;
+    width: 20vw;
+}
+.login-container, .password-container label{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.password-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-password-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.checkbox-password-container a{
+
+    text-decoration: underline;
+    color: $dark-blue;
+    font-weight: 700;
+
+
+}
+.checkbox-password-container p{ 
+    margin-right: 305px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin: 0;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container button{
+    width: 25vw;
+    height: 5.5vh;
+    margin-top: 25px;
+}
+.button-container a{
+    
+    margin-top: 25px;
+    text-decoration: underline;
+    color: $dark-blue;
+    font-weight: 700;
+    letter-spacing: 1px;
+};
+
+
+.button-container .flex .black-button{
+    background-color: $dark-blue;
+    color: #fff;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.button-container .flex .white-button{
+    background-color: $white;
+    color: $dark-blue;
+    border: 1px solid $dark-blue;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
