@@ -22,7 +22,7 @@
   </div>
   <section>
     <div class="flex">
-      <div class="clothes-container">
+      <div class="clothes-container" *ngFor="let item of productList">
         <div class="image-container">
           <img
             width="300"
@@ -45,7 +45,7 @@
           <p>classic rozowy t-shirt</p>
           <span class="price-text">23.34$</span>
 
-          <button>Add</button>
+          <button id="addItem">Add</button>
         </div>
         <div class="image-container">
           <img

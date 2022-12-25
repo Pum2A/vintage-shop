@@ -11,6 +11,8 @@ $text-color: #54546c;
   
 }
 
+
+
 .clothes-container{
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -79,8 +81,8 @@ span{
 @media only screen and (max-width: 1050px){
 
   img{
-    width: 150px;
-    height: 250px;
+    width: 350px;
+    height: 450px;
     margin: 50px 25px;
 
   }

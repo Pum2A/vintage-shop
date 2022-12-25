@@ -11,6 +11,9 @@
   <span class="material-symbols-outlined" id="menu" (click)="onClick()">
     menu
   </span>
+  <!-- <div [counter]="counter">
+    
+  </div> -->
   </div>
   <nav *ngIf="hide" [@hide]="hide">
     <a
@@ -38,9 +41,15 @@
       routerLink="/shop-card"
       routerLinkActive="active"
       ariaCurrentWhenActive="page"
-      >SHOPPNIG CARD(0)</a
-    >
-  </nav>
+    
+      >SHOPPNIG CARD({{count}})
+      
+       </a>
+       
+
+
+    
+  </nav >
   <nav *ngIf="show" [@show]="show">
     <div class="span-container">
 

@@ -1,9 +1,16 @@
 import { transition, trigger, state , animate, style,  } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
+import { ManComponent } from '../man/man.component';
+import { Directive } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
+import { SharedSerice } from '../shared.service';
+import { Subscription } from 'rxjs';
+
 
 @Component({
   selector: 'app-topbar',
   templateUrl: './topbar.component.html',
+  
   styleUrls: ['./topbar.component.scss'],
   animations: [
     trigger('fade', [
@@ -66,7 +73,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopbarComponent implements OnInit {
 
-  constructor() { }
+
+
+  clickEventSubscription:Subscription;
+
+  constructor(private sharedService:SharedSerice){
+    this.clickEventSubscription = this.sharedService.getClickEvent().subscribe(() =>{
+      this.incrementCount();
+    })
+  }
+  
+  count:number = 0;
+incrementCount(){
+  this.count++;
+}
 
 
   sidenav:string = 'in';
@@ -74,8 +94,27 @@ export class TopbarComponent implements OnInit {
   show:string = 'out';
   menu:string = 'in';
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   counter = 0;
   ngOnInit(): void {
   }
+
+  
   
   onClick(){
     this.sidenav = this.sidenav === 'out' ? 'in ' : 'out'

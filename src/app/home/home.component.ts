@@ -11,6 +11,8 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
+    
   }
   beshMen = "../../assets/mezczyzna-BIALY.webp";
   blackMen = "../../assets/mezczyzna-czarny.webp";
@@ -23,5 +25,8 @@ export class HomeComponent implements OnInit {
   beshGirl = '../../assets/kobieta-bezowe.webp'
 
   
+  public productList : any ;
+
+
 
 }

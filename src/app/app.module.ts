@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgOptimizedImage } from '@angular/common';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ShopCardComponent } from './shop-card/shop-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -35,10 +36,14 @@ import { FormsModule } from '@angular/forms';
     LazyLoadImageModule,
     FormsModule,
     BrowserAnimationsModule,
+    HttpClientModule,
 
     
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas:[
+    CUSTOM_ELEMENTS_SCHEMA
+  ]
 })
 export class AppModule { }

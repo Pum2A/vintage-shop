@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { AppComponent } from '../app.component';
+import { SharedSerice } from '../shared.service';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { AppComponent } from '../app.component';
 })
 export class WomenComponent implements OnInit {
   
-  constructor() { }
+  constructor( private sharedService:SharedSerice ) { }
   pinkGirl = '../../assets/kobieta-rozowe.webp'
   blackGirl = '../../assets/kobieta-czarne.webp'
   blekitGirl = '../../assets/kobieta-blekit.webp'
@@ -19,5 +20,10 @@ export class WomenComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
+  clickMe(){
+    this.sharedService.sendClickEvent();
+    }
 
 }
